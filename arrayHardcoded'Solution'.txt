@@ -1,0 +1,38 @@
+
+app.js
+
+
+
+
+const label = ['Primary', "Secondary", 'Success', 'Danger', "Warning","Info", "Light", "Dark"];
+const color = ['blue', "grey", 'green', 'red', "yellow","lightblue", "White", "black"];
+
+function labelColorPicker( name, col) = {
+label.push(name);
+color.push(col);
+}
+
+labelColorPicker("IronMan", "Purple");
+labelColorPicker("Superman", "Pink");
+labelColorPicker("Batman", "lightRed");
+
+  return (
+    <View style={styles.container}>{color.map((color ,i) =>
+      <CustomBtn label={label[i]} bg={color}/>
+      )}
+    </View>
+  );
+
+
+
+
+ButtonComp.js
+
+
+
+label in label. big in bg.
+
+
+
+
+
